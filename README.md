@@ -89,6 +89,18 @@ export MLFLOW_TRACKING_PASSWORD=YourAccessToken
 
 # AWS-CICD-Deployment-with-Github-Actions
 
+Description: About the deployment
+
+	1. Build docker image of the source code
+
+	2. Push your docker image to ECR
+
+	3. Launch Your EC2 
+
+	4. Pull Your image from ECR in EC2
+
+	5. Lauch your docker image in EC2
+
 ## 1. Login to AWS console.
 
 ## 2. Create IAM user for deployment
@@ -104,18 +116,6 @@ export MLFLOW_TRACKING_PASSWORD=YourAccessToken
 	1. AmazonEC2ContainerRegistryFullAccess
 
 	2. AmazonEC2FullAccess
-
-	#Description: About the deployment
-
-	1. Build docker image of the source code
-
-	2. Push your docker image to ECR
-
-	3. Launch Your EC2 
-
-	4. Pull Your image from ECR in EC2
-
-	5. Lauch your docker image in EC2
 
 	
 ## 3. Create ECR repo to store/save docker image
@@ -157,7 +157,7 @@ export MLFLOW_TRACKING_PASSWORD=YourAccessToken
 
     AWS_ECR_LOGIN_URI =
 
-    ECR_REPOSITORY_NAME = mlops-project
+    ECR_REPOSITORY_NAME = mlproj
 
 
 # About MLflow 
